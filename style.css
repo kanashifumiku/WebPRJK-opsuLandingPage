@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,500;1,200;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*reset and set*/
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Montserrat';
+}
+a{
+  text-decoration-line: none;
+}
+.garis{
+  width: 20%;
+  height: 5px;
+  border-radius: 100px;
+  background: linear-gradient(45deg, rgba(150, 159, 255, 1), rgba(150, 159, 255, .5));
+}
+.garis2 {
+  width: 20%;
+  height: 6px;
+  background: #E5E7FF;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+.section1{
+  color: #D4D4D4;
+}
+
+
+/*mari mengkodingkan*/
+/*navigasi*/
+.StickyNav{
+  position: sticky;
+  top: 0;
+}
+nav{
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+.logoNav{
+  width: 10%;
+}
+.logoNavMob{
+  width: 10%;
+  display: none;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  nav ul li{
+    list-style: none;
+    padding: 5px;
+  }
+  nav ul .forClose{
+    display: none;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik';
+  }
+ 
+
+/*container one*/
+.containerOne{
+  margin: 7%;
+}
+.logoOne{
+  width: 30%;
+}
+.headingOne{
+  font-family: 'Montserrat';
+}
+.btnOne{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(45deg, #F0F3FF, #859FFF54);
+  padding: 10px;
+  border: 1px solid #204EFF;
+  border-radius: 100px;
+  cursor: pointer;
+  align-items: center;
+  margin: 5px;
+}
+  .btnOne a{
+    color: black;
+    align-items: center;
+  }
+.informationOne{
+  font-weight: 300;
+  font-family: 'Montserrat';
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgba(114, 116, 135, 0.56);
+}
+
+
+/*container two*/
+.containerTwo{
+  margin: 7%;
+}
+.subHeading{
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.content-preview{
+  width: 100%;
+  margin-top: 1.5%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+.endText{
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+.play-badge{
+  width: 25%;
+}
+.btnEnd{
+  background: white;
+  border: 2px solid #B9BCE0;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+
+/*image flex*/
+.image-flex{
+  display: flex;
+  justify-content: center;
+}
+.img-berkas{
+  width: 30%;
+}
+
+
+/*credit*/
+.credit{
+  margin: 7%;
+}
+.paragraf{
+  font-weight: 500;
+  letter-spacing: 3px
+}
+.credit ul{
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.credit ul li{
+  list-style: none;
+}
+.listP{
+  font-weight: 700;
+}
+.listp{
+  font-weight: 600;
+}
+
+
+/*footer*/
+footer{
+  padding: 2%;
+}
+
+/*keyframes*/
+@keyframes fade-in{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+@keyframes blow-up{
+  from{
+    width: 30%;
+  }
+  to{
+    width: 35%
+  }
+}
+
+
+/*bapakkau responsif*/
+@media (max-width:798px){
+  .logoNav{
+    display: none;
+  }
+  .logoNavMob{
+    display: block;
+  }
+  nav ul{
+    display: none;
+  }
+}
+
+
+/*Navigate Response*/
+#navigate nav ul{
+  display: flex;
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  backdrop-filter: blur(15px);
+  -webkit-background-clip: blur(15px);
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom: 1px solid #B9BCE0;
+}
+#navigate nav ul .forClose{
+  display: flex;
+  margin: 2%px;
+}
+#navigate nav ul .forClose .btnCloseNav{
+  background: #E3E6FF;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Rubik';
+  padding: 7px;
+}
